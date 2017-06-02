@@ -1,5 +1,5 @@
 #!/bin/sh
-src_dir=/mnt/hgfs/winshare/pi_client_wifi/src  
+src_dir=/mnt/hgfs/winshare/pi_client_wifi/src/  
 dest_dir=/home/pi/pi_client_wifi/src  
 host=192.168.199.221
 username=root  
@@ -10,7 +10,7 @@ if [ ! -d $dest_dir ]; then
   mkdir -p $dest_dir  
 else  
   rm -rf $dest_dir  
-  mkdir -p $dest_dir  
+ # mkdir -p $dest_dir  
 fi  
   
 # 将远程服务器上的文件拷贝到本机  
